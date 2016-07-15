@@ -1,0 +1,9 @@
+alert("Helllo");
+var alert = 2
+alert("World");
+
+When this code executes it would first send out an alert with the word "Hello"
+Then on line 2 it declares a variable by the name alert and sets it to two.
+On line 3 it sends out another alert with the word "World". The variable value could have been
+changed to world if it had been set to "World" with a = sign but instead the
+operator alert was callled and not the variable.

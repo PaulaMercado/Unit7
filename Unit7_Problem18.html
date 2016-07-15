@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    When this code is run it returns an alert message "HEY YOU!" <br>
+    and an error message for unexpected token. The reason for this <br>
+    is because the statement shout(); runs the function by the name <br>
+    shout. The line after that alerts message which is a local variable <br>
+    inside the function. Unless there's another variable called message, <br>
+    that is global and doesn't belong to a function it will crash and <br>
+    return a message in the runner that says: <br>
+    "Uncaught ReferenceError: message is not defined" <br>
+</p>
+<script>
+var shout = function () {
+    var message = "HEY YOU";
+    alert(message);
+};
+    shout();
+    alert(message);
+</script>
+</body>
+</html>

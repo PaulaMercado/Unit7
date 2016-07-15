@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Objects</title>
+</head>
+<body>
+<script>
+
+    var movie = function(title,mpaa, directors, producers, studio, releaseDate){
+        this.title= title;
+        this.mpaa= mpaa;
+        this.directors=directors;
+        this.producers=producers;
+        this.studio=studio;
+        this.releaseDate=releaseDate;
+    }
+    var movieOne = new movie("Burn After Reading", "R", ["Ethan Coen", " Joel Coen"],
+            ["Tim Bevan", " Ethan Coen", " Joel Coel"], "Focus Features", "September 12 2008");
+
+    var movieTwo = new movie("Ghostbusters", "PG-13", "Paul Feig", ["Dan Aykroyd", " Ali Bell", " Paul Feig",
+            " Jessie Henderson", " Michele Imperato", " Joe Medjuck", " Amy Pascal", " James Paul", " Alex Plapinger",
+            " Tom Pollock", " Eric Reich", " Ivan Reitman", " Ivan Reitman", " Ben Waisbren"], "Colombia Pictures",
+            "July 17 2016" )
+
+    document.write("Title: " + movieOne.title + "<br>" + "MPAA Rating: " + movieOne.mpaa +
+            "<br>" + "Directors: " + movieOne.directors + "<br>" + "Producers: " + movieOne.producers
+            + "<br>" + "Studio: " + movieOne.studio + "<br>" + "Release Date: " + movieOne.releaseDate + "<br>" + "<br>");
+
+    document.write("Title: " + movieTwo.title + "<br>" + "MPAA Rating: " + movieTwo.mpaa +
+            "<br>" + "Directors: " + movieTwo.directors + "<br>" + "Producers: " + movieTwo.producers
+            + "<br>" + "Studio: " + movieTwo.studio + "<br>" + "Release Date: " + movieTwo.releaseDate + "<br>");
+</script>
+</body>
+</html>
