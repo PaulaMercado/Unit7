@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object: Date Constructor</title>
+</head>
+<body>
+<!-- 30. JavaScript comes with a built-in object called Date, which is a constructor.
+Research this function and answer the following:
+(a) What does the expression new Date() produce?
+(b) What does the expression new Date( 2009,0,20) produce?
+(c) If d1 and d2 refer to date objects, what does the expression
+d1. valueOf() - d2. valueOf() produce? -->
+<h3></h3>
+<p>
+    (A) The object Date produces the current time and date it is. When I tried to use it this is what
+    returned in the browser: Thu Jul 14 2016 20:34:58 GMT-0700 (PDT). <br> You can also see a live example
+    of it below. To use it you must type Date() and not just Date.
+</p>
+<p>
+    (B) This object produces the date information for  January 20th 2009 with no set time.
+</p>
+<p>
+    (C) d1 refers to a variable expression of date(). Because in this instance they have not been declared
+    d1.valueOf() - d2.valueOf() does not return anything.
+</p>
+<script>
+    document.write("This is the current time and date using the new Date() object: " + new Date());
+    document.write("<br>");
+    document.write("This is the result of new Date( 2009,0,20): " + new Date( 2009,0,20));
+
+
+</script>
+</body>
+</html>
